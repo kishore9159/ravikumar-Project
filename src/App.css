@@ -1,0 +1,41 @@
+.app {
+  overflow-x: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+.app::before,
+.app::after {
+  content: '';
+  position: fixed;
+  z-index: -2;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(8px);
+}
+
+.app::before {
+  width: 520px;
+  height: 520px;
+  top: -140px;
+  left: -180px;
+  background: rgba(239, 93, 63, 0.12);
+}
+
+.app::after {
+  width: 640px;
+  height: 640px;
+  right: -240px;
+  top: 28%;
+  background: rgba(15, 111, 108, 0.1);
+}
+
+.app {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(16, 24, 32, 0.015) 0,
+    rgba(16, 24, 32, 0.015) 1px,
+    transparent 1px,
+    transparent 46px
+  );
+}
