@@ -1,3 +1,14 @@
+<?php
+/**
+ * Hero section.
+ *
+ * @package StartupWebsite
+ */
+
+if (! defined('ABSPATH')) {
+    exit;
+}
+?>
 <section id="home" class="hero">
     <div class="hero-bg">
         <div class="hero-shape hero-shape-1"></div>
@@ -6,7 +17,7 @@
 
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="hero-badge">🚀 Welcome to the Future</span>
+            <span class="hero-badge">Welcome to the Future</span>
             <h1 class="hero-title">
                 Innovative <span class="highlight">Digital</span> Solutions for Your Business
             </h1>
@@ -15,11 +26,11 @@
                 to help your business grow and succeed in the modern digital landscape.
             </p>
             <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary">
-                    Our Services <i class="fas fa-arrow-right btn-icon"></i>
+                <a href="<?php echo esc_url(home_url('/#services')); ?>" class="btn btn-primary">
+                    Our Services <i class="fas fa-arrow-right btn-icon" aria-hidden="true"></i>
                 </a>
-                <a href="#about" class="btn btn-secondary">
-                    <i class="fas fa-play play-icon"></i> Learn More
+                <a href="<?php echo esc_url(home_url('/#about')); ?>" class="btn btn-secondary">
+                    <i class="fas fa-play play-icon" aria-hidden="true"></i> Learn More
                 </a>
             </div>
             <div class="hero-stats">

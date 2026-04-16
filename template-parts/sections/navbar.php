@@ -1,0 +1,36 @@
+<?php
+/**
+ * Navbar section.
+ *
+ * @package StartupWebsite
+ */
+
+if (! defined('ABSPATH')) {
+    exit;
+}
+
+$logo_url = get_template_directory_uri() . '/logo.png';
+?>
+<nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="logo" aria-label="<?php esc_attr_e('Home', 'startup-website'); ?>">
+            <img src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="logo-img" />
+        </a>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="<?php echo esc_url(home_url('/#home')); ?>" onclick="closeMenu()">Home</a></li>
+            <li><a href="<?php echo esc_url(home_url('/#about')); ?>" onclick="closeMenu()">About</a></li>
+            <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()">Services</a></li>
+            <li><a href="<?php echo esc_url(home_url('/#testimonials')); ?>" onclick="closeMenu()">Testimonials</a></li>
+            <li><a href="<?php echo esc_url(home_url('/#contact')); ?>" onclick="closeMenu()">Contact</a></li>
+        </ul>
+
+        <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="nav-cta btn btn-primary">Get Started</a>
+
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()" role="button" tabindex="0" aria-label="<?php esc_attr_e('Toggle menu', 'startup-website'); ?>">
+            <span class="bar-line"></span>
+            <span class="bar-line"></span>
+            <span class="bar-line"></span>
+        </div>
+    </div>
+</nav>

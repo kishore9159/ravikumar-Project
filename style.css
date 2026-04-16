@@ -1,0 +1,26 @@
+/*
+Theme Name: Startup Website
+Theme URI: https://example.com/startup-website
+Author: RIE
+Author URI: https://example.com
+Description: WordPress theme version of the Startup Website landing page.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.4
+Text Domain: startup-website
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.admin-bar .navbar {
+  top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.admin-bar .navbar {
+    top: 46px;
+  }
+}

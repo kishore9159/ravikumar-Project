@@ -1,12 +1,22 @@
 <?php
-$features = [
+/**
+ * About section.
+ *
+ * @package StartupWebsite
+ */
+
+if (! defined('ABSPATH')) {
+    exit;
+}
+
+$features = array(
     'Expert team with 10+ years experience',
     'Quality-driven approach to every project',
     'On-time delivery guaranteed',
     'Dedicated support team available 24/7',
     'Cost-effective solutions',
-    'Cutting-edge technology stack'
-];
+    'Cutting-edge technology stack',
+);
 ?>
 <section id="about" class="about section">
     <div class="container about-container">
@@ -15,19 +25,19 @@ $features = [
                 <div class="about-visual">
                     <div class="visual-grid">
                         <div class="grid-item item-1">
-                            <span class="grid-icon">🎯</span>
+                            <span class="grid-icon">Mission</span>
                             <span class="grid-label">Mission Driven</span>
                         </div>
                         <div class="grid-item item-2">
-                            <span class="grid-icon">💼</span>
+                            <span class="grid-icon">Pro</span>
                             <span class="grid-label">Professional</span>
                         </div>
                         <div class="grid-item item-3">
-                            <span class="grid-icon">🌟</span>
+                            <span class="grid-icon">Star</span>
                             <span class="grid-label">Excellence</span>
                         </div>
                         <div class="grid-item item-4">
-                            <span class="grid-icon">🤝</span>
+                            <span class="grid-icon">Team</span>
                             <span class="grid-label">Partnership</span>
                         </div>
                     </div>
@@ -55,15 +65,15 @@ $features = [
             </p>
 
             <div class="about-features">
-                <?php foreach ($features as $feature): ?>
+                <?php foreach ($features as $feature) : ?>
                     <div class="feature-item">
-                        <i class="fas fa-check-circle feature-icon"></i>
-                        <span><?php echo htmlspecialchars($feature); ?></span>
+                        <i class="fas fa-check-circle feature-icon" aria-hidden="true"></i>
+                        <span><?php echo esc_html($feature); ?></span>
                     </div>
                 <?php endforeach; ?>
             </div>
 
-            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="btn btn-primary">Get in Touch</a>
         </div>
     </div>
 </section>
