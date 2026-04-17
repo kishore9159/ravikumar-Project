@@ -15,8 +15,8 @@ $logo_url = get_template_directory_uri() . '/public/logoo.png';
     <div class="container">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-logo" aria-label="<?php esc_attr_e('Home', 'startup-website'); ?>">
-                    <img src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="footer-logo-img" />
+                <a href="<?php echo esc_url(home_url('/#home')); ?>" class="footer-logo" aria-label="<?php esc_attr_e('Home', 'startup-website'); ?>">
+                    <img src="<?php echo esc_url($logo_url); ?>" alt="RIE - The Digital Technocrats" class="footer-logo-img" />
                 </a>
                 <p class="footer-description">
                     RIE - The Digital Technocrats provides cutting-edge digital solutions and professional services to help
@@ -56,7 +56,7 @@ $logo_url = get_template_directory_uri() . '/public/logoo.png';
             <div class="footer-newsletter">
                 <h4 class="footer-title">Newsletter</h4>
                 <p>Subscribe to our newsletter for updates and insights.</p>
-                <form class="newsletter-form" method="POST" action="#">
+                <form class="newsletter-form" method="post" action="#">
                     <input type="email" name="newsletter_email" placeholder="Enter your email" />
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
@@ -64,7 +64,7 @@ $logo_url = get_template_directory_uri() . '/public/logoo.png';
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; <?php echo esc_html(wp_date('Y')); ?> RIE - The Digital Technocrats. All Rights Reserved.</p>
+            <p>&copy; 2026 RIE - The Digital Technocrats. All Rights Reserved.</p>
             <div class="footer-bottom-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
@@ -73,7 +73,7 @@ $logo_url = get_template_directory_uri() . '/public/logoo.png';
         </div>
     </div>
 
-    <button class="scroll-top" type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Scroll to top">
+    <button class="scroll-top" type="button" onclick="window.scrollTo({top: 0, behavior: 'auto'})" aria-label="Scroll to top">
         <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 </footer>

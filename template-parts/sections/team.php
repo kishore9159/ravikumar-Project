@@ -45,7 +45,7 @@ $team_members = array(
 <section id="team" class="team section">
     <div class="container">
         <span class="section-label center">Our Team</span>
-        <h2 class="section-title">Tutis</h2>
+        <h2 class="section-title">Team Members</h2>
         <p class="section-subtitle">
             The leadership team behind our delivery excellence and long-term client relationships.
         </p>

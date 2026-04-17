@@ -17,7 +17,7 @@ if (! defined('ABSPATH')) {
 
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="hero-badge">Welcome to the Future</span>
+            <span class="hero-badge">&#x1F680; Welcome to the Future</span>
             <h1 class="hero-title">
                 Innovative <span class="highlight">Digital</span> Solutions for Your Business
             </h1>

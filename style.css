@@ -12,7 +12,7 @@ Text Domain: startup-website
 */
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body.admin-bar .navbar {

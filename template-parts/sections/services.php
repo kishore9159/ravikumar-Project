@@ -35,6 +35,11 @@ $services = array(
         'title' => 'Editorial and Pre-press',
         'description' => 'Professional editing, proofreading, and pre-press services to ensure your content is polished and publication-ready.',
     ),
+    array(
+        'icon' => 'fas fa-laptop-code',
+        'title' => 'Web Design',
+        'description' => 'Custom web design services focused on modern layouts, responsive user experiences, and conversion-driven interfaces.',
+    ),
 );
 ?>
 <section id="services" class="services section">

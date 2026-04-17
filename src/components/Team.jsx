@@ -3,34 +3,37 @@ import './Team.css'
 const Team = () => {
   const members = [
     {
-      name: 'RAVI KUMAR',
-      role: 'President',
-      initials: 'AD',
-      tone: 'tone-1'
+      name: 'Ravi K',
+      role: 'CEO & Founder',
+      
+      tone: 'tone-1',
+      photo: '/ravik.jpeg'
     },
     {
-      name: 'Barathi Rajagopalan',
-      role: 'Vice President - Client Success',
-      initials: 'BR',
-      tone: 'tone-2'
+      name: 'Priyanka M.R',
+      role: 'Sr. Production Executive - Operations',
+      tone: 'tone-2',
+      photo: '/Priyanka.jpg'
     },
     {
-      name: 'Suresh R',
-      role: 'General Manager - Operations',
-      initials: 'SR',
+      name: 'Aarthi R',
+      role: 'Junior Production Executive',
+      initials: 'RK',
       tone: 'tone-3'
     },
     {
-      name: 'Jacob Francis J',
-      role: 'Sr. Manager - Finance & Accounts',
-      initials: 'JJ',
-      tone: 'tone-4'
+      name: 'Sharmila K',
+      role: 'Junior Production Executive',
+      tone: 'tone-4',
+      photo: '/Sharmila_photo.jpg'
+
     },
     {
-      name: 'KISHORE',
-      role: 'WEB-DISIGNER',
-      initials: 'RD',
-      tone: 'tone-5'
+      name: 'Kishore T',
+      role: 'Web Developer',
+     
+      tone: 'tone-5',
+      photo: '/kishore.jpg'
     }
   ]
 
@@ -46,8 +49,21 @@ const Team = () => {
         <div className="team-grid">
           {members.map((member) => (
             <article key={member.name} className="team-card">
-              <div className={`team-photo ${member.tone}`} aria-hidden="true">
-                <span className="team-initials">{member.initials}</span>
+              <div
+                className={`team-photo ${member.tone}`}
+                aria-hidden="true"
+                style={
+                  member.photo
+                    ? {
+                        backgroundImage: `url(${member.photo})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }
+                    : undefined
+                }
+              >
+                {!member.photo && <span className="team-initials">{member.initials}</span>}
               </div>
               <div className="team-info">
                 <h3 className="team-name">{member.name}</h3>

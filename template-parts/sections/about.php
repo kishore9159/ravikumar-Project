@@ -25,19 +25,19 @@ $features = array(
                 <div class="about-visual">
                     <div class="visual-grid">
                         <div class="grid-item item-1">
-                            <span class="grid-icon">Mission</span>
+                            <span class="grid-icon">&#x1F3AF;</span>
                             <span class="grid-label">Mission Driven</span>
                         </div>
                         <div class="grid-item item-2">
-                            <span class="grid-icon">Pro</span>
+                            <span class="grid-icon">&#x1F4BC;</span>
                             <span class="grid-label">Professional</span>
                         </div>
                         <div class="grid-item item-3">
-                            <span class="grid-icon">Star</span>
+                            <span class="grid-icon">&#x1F31F;</span>
                             <span class="grid-label">Excellence</span>
                         </div>
                         <div class="grid-item item-4">
-                            <span class="grid-icon">Team</span>
+                            <span class="grid-icon">&#x1F91D;</span>
                             <span class="grid-label">Partnership</span>
                         </div>
                     </div>

@@ -10,11 +10,19 @@ if (! defined('ABSPATH')) {
 }
 
 $logo_url = get_template_directory_uri() . '/public/logoo.png';
+$service_links = array(
+    'eBook Publishing Services',
+    'Typesetting Services',
+    'ePub3 Services',
+    'Accessibility Services',
+    'Editorial and Pre-press',
+    'Web Design',
+);
 ?>
 <nav class="navbar" id="navbar">
     <div class="container navbar-container">
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="logo" aria-label="<?php esc_attr_e('Home', 'startup-website'); ?>">
-            <img src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="logo-img" />
+        <a href="<?php echo esc_url(home_url('/#home')); ?>" class="logo" aria-label="<?php esc_attr_e('Home', 'startup-website'); ?>">
+            <img src="<?php echo esc_url($logo_url); ?>" alt="RIE - The Digital Technocrats" class="logo-img" />
         </a>
 
         <ul class="nav-menu" id="nav-menu">
@@ -23,12 +31,9 @@ $logo_url = get_template_directory_uri() . '/public/logoo.png';
             <li class="nav-item-has-submenu">
                 <a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()" aria-haspopup="true">Services</a>
                 <ul class="nav-submenu" aria-label="Services submenu">
-                    <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()">eBook Publishing Services</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()">Typesetting Services</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()">ePub3 Services</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()">Accessibility Services</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()">Editorial and Pre-press</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()">Web Design</a></li>
+                    <?php foreach ($service_links as $service) : ?>
+                        <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()"><?php echo esc_html($service); ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </li>
             <li><a href="<?php echo esc_url(home_url('/#team')); ?>" onclick="closeMenu()">Team</a></li>
@@ -38,9 +43,7 @@ $logo_url = get_template_directory_uri() . '/public/logoo.png';
         <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="nav-cta btn btn-primary">Get Started</a>
 
         <div class="hamburger" id="hamburger" onclick="toggleMenu()" role="button" tabindex="0" aria-label="<?php esc_attr_e('Toggle menu', 'startup-website'); ?>">
-            <span class="bar-line"></span>
-            <span class="bar-line"></span>
-            <span class="bar-line"></span>
+            <i class="fas fa-bars" id="hamburger-icon" aria-hidden="true"></i>
         </div>
     </div>
 </nav>
