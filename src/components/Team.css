@@ -1,0 +1,120 @@
+.team {
+  background:
+    radial-gradient(860px 300px at 8% 0%, rgba(15, 111, 108, 0.16), transparent 68%),
+    linear-gradient(180deg, #fffcf5 0%, #fff8ed 100%);
+}
+
+.team .section-label.center {
+  display: block;
+  text-align: center;
+  margin: 0 auto 16px;
+}
+
+.team .section-title {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.team-card {
+  background: #fffef9;
+  border: 1px solid rgba(16, 24, 32, 0.12);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(16, 24, 32, 0.1);
+}
+
+.team-photo {
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 18px;
+  position: relative;
+}
+
+.team-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(16, 24, 32, 0.3) 0%, rgba(16, 24, 32, 0) 56%);
+}
+
+.team-initials {
+  position: relative;
+  z-index: 1;
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fffef8;
+  background: rgba(16, 24, 32, 0.46);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.tone-1 {
+  background: linear-gradient(145deg, #9e6a44 0%, #6f4a32 100%);
+}
+
+.tone-2 {
+  background: linear-gradient(145deg, #43648d 0%, #6e8aa9 100%);
+}
+
+.tone-3 {
+  background: linear-gradient(145deg, #5f7d9a 0%, #7d99b1 100%);
+}
+
+.tone-4 {
+  background: linear-gradient(145deg, #516e4f 0%, #6f8f6d 100%);
+}
+
+.tone-5 {
+  background: linear-gradient(145deg, #7d7f86 0%, #a3a6ad 100%);
+}
+
+.team-info {
+  padding: 20px 16px 22px;
+  text-align: center;
+}
+
+.team-name {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.team-role {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

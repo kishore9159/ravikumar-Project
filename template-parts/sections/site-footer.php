@@ -9,7 +9,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-$logo_url = get_template_directory_uri() . '/logo.png';
+$logo_url = get_template_directory_uri() . '/public/logoo.png';
 ?>
 <footer class="footer">
     <div class="container">
@@ -37,6 +37,7 @@ $logo_url = get_template_directory_uri() . '/logo.png';
                     <li><a href="<?php echo esc_url(home_url('/#home')); ?>">Home</a></li>
                     <li><a href="<?php echo esc_url(home_url('/#about')); ?>">About Us</a></li>
                     <li><a href="<?php echo esc_url(home_url('/#services')); ?>">Services</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/#team')); ?>">Team</a></li>
                     <li><a href="<?php echo esc_url(home_url('/#contact')); ?>">Contact</a></li>
                 </ul>
             </div>

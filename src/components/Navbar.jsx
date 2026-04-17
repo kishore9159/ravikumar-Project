@@ -42,7 +42,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <a href="#" className="logo">
-          <img src="/logo.png" alt="RIE - The Digital Technocrats" className="logo-img" />
+          <img src="/logoo.png" alt="RIE - The Digital Technocrats" className="logo-img" />
         </a>
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
@@ -58,6 +58,7 @@ const Navbar = () => {
               ))}
             </ul>
           </li>
+          <li><a href="#team" onClick={closeMenu}>Team</a></li>
           <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
 
