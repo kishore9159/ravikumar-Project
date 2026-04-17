@@ -58,7 +58,6 @@ const Navbar = () => {
               ))}
             </ul>
           </li>
-          <li><a href="#testimonials" onClick={closeMenu}>Testimonials</a></li>
           <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
 
