@@ -5,6 +5,7 @@ import './Navbar.css'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
 
   const serviceLinks = [
     'eBook Publishing Services',
@@ -31,11 +32,28 @@ const Navbar = () => {
   }, [isOpen])
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    setIsOpen((prev) => {
+      const next = !prev
+      if (!next) {
+        setIsServicesOpen(false)
+      }
+      return next
+    })
   }
 
   const closeMenu = () => {
     setIsOpen(false)
+    setIsServicesOpen(false)
+  }
+
+  const handleServicesClick = (event) => {
+    if (window.innerWidth <= 992) {
+      event.preventDefault()
+      setIsServicesOpen((prev) => !prev)
+      return
+    }
+
+    closeMenu()
   }
 
   return (
@@ -48,8 +66,15 @@ const Navbar = () => {
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
           <li><a href="#home" onClick={closeMenu}>Home</a></li>
           <li><a href="#about" onClick={closeMenu}>About</a></li>
-          <li className="nav-item-has-submenu">
-            <a href="#services" onClick={closeMenu} aria-haspopup="true">Services</a>
+          <li className={`nav-item-has-submenu ${isServicesOpen ? 'open' : ''}`}>
+            <a
+              href="#services"
+              onClick={handleServicesClick}
+              aria-haspopup="true"
+              aria-expanded={isServicesOpen}
+            >
+              Services
+            </a>
             <ul className="nav-submenu" aria-label="Services submenu">
               {serviceLinks.map((service) => (
                 <li key={service}>

@@ -28,8 +28,8 @@ $service_links = array(
         <ul class="nav-menu" id="nav-menu">
             <li><a href="<?php echo esc_url(home_url('/#home')); ?>" onclick="closeMenu()">Home</a></li>
             <li><a href="<?php echo esc_url(home_url('/#about')); ?>" onclick="closeMenu()">About</a></li>
-            <li class="nav-item-has-submenu">
-                <a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()" aria-haspopup="true">Services</a>
+            <li class="nav-item-has-submenu" id="services-menu-item">
+                <a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="toggleServicesMenu(event)" aria-haspopup="true" aria-expanded="false">Services</a>
                 <ul class="nav-submenu" aria-label="Services submenu">
                     <?php foreach ($service_links as $service) : ?>
                         <li><a href="<?php echo esc_url(home_url('/#services')); ?>" onclick="closeMenu()"><?php echo esc_html($service); ?></a></li>
