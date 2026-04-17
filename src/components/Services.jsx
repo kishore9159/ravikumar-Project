@@ -1,4 +1,4 @@
-import { FaCode, FaCloud, FaPalette, FaDatabase, FaChartLine } from 'react-icons/fa'
+import { FaCode, FaCloud, FaPalette, FaDatabase, FaChartLine, FaLaptopCode } from 'react-icons/fa'
 import './Services.css'
 
 const Services = () => {
@@ -27,6 +27,11 @@ const Services = () => {
     icon: <FaChartLine />,
     title: 'Editorial and Pre-press',
     description: 'Professional editing, proofreading, and pre-press services to ensure your content is polished and publication-ready.'
+  },
+  {
+    icon: <FaLaptopCode />,
+    title: 'Web Design',
+    description: 'Custom web design services focused on modern layouts, responsive user experiences, and conversion-driven interfaces.'
   }
 ]
 

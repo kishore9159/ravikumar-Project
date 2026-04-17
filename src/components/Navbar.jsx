@@ -6,6 +6,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
+  const serviceLinks = [
+    'eBook Publishing Services',
+    'Typesetting Services',
+    'ePub3 Services',
+    'Accessibility Services',
+    'Editorial and Pre-press',
+    'Web Design'
+  ]
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -13,6 +22,13 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -32,14 +48,23 @@ const Navbar = () => {
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
           <li><a href="#home" onClick={closeMenu}>Home</a></li>
           <li><a href="#about" onClick={closeMenu}>About</a></li>
-          <li><a href="#services" onClick={closeMenu}>Services</a></li>
+          <li className="nav-item-has-submenu">
+            <a href="#services" onClick={closeMenu} aria-haspopup="true">Services</a>
+            <ul className="nav-submenu" aria-label="Services submenu">
+              {serviceLinks.map((service) => (
+                <li key={service}>
+                  <a href="#services" onClick={closeMenu}>{service}</a>
+                </li>
+              ))}
+            </ul>
+          </li>
           <li><a href="#testimonials" onClick={closeMenu}>Testimonials</a></li>
           <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
 
         <a href="#contact" className="nav-cta btn btn-primary">Get Started</a>
 
-        <div className="hamburger" onClick={toggleMenu}>
+        <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>

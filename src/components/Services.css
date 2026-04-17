@@ -45,8 +45,8 @@
   background: var(--gradient);
 }
 
-.service-card:last-child {
-  grid-column: 3 / span 8;
+.service-card:last-child:nth-child(odd) {
+  grid-column: 5 / span 4;
 }
 
 .service-icon {

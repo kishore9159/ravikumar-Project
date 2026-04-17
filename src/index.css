@@ -30,7 +30,20 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Keep the UI static by disabling animation and transition effects globally. */
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
 }
 
 body {
@@ -169,5 +182,15 @@ img {
 
   .section-subtitle {
     margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 72px 0;
   }
 }
