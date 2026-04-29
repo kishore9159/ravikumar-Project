@@ -13,7 +13,7 @@ const Team = () => {
       name: 'Priyanka M.R',
       role: 'Sr. Production Executive - Operations',
       tone: 'tone-2',
-      photo: '/Priyanka.jpg'
+      photo: '/Priyanka.png'
     },
     {
       name: 'Aarthi R',
