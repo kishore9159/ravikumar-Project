@@ -47,7 +47,7 @@ const About = () => {
           <span className="section-label">About Us</span>
           <h2 className="about-title">We Are Your One-Stop Solution for All Digital Services</h2>
           <p className="about-description">
-            RIE - The Digital Technocrats is a leading technology company providing comprehensive digital solutions, 
+            RIE - Rithie Innovative E-Services is a leading technology company providing comprehensive digital solutions, 
             professional services, and expert consulting to businesses worldwide. Using our 
             state-of-the-art infrastructure combined with global experience and technology 
             expertise, we define, plan, and deliver a complete range of services.

@@ -60,7 +60,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <a href="#" className="logo">
-          <img src="/logoo.png" alt="RIE - The Digital Technocrats" className="logo-img" />
+          <img src="/logoo.png" alt="RIE - Rithie Innovative E-Services" className="logo-img" />
         </a>
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>

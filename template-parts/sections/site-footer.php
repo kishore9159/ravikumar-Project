@@ -16,18 +16,17 @@ $logo_url = get_template_directory_uri() . '/public/logoo.png';
         <div class="footer-content">
             <div class="footer-brand">
                 <a href="<?php echo esc_url(home_url('/#home')); ?>" class="footer-logo" aria-label="<?php esc_attr_e('Home', 'startup-website'); ?>">
-                    <img src="<?php echo esc_url($logo_url); ?>" alt="RIE - The Digital Technocrats" class="footer-logo-img" />
+                    <img src="<?php echo esc_url($logo_url); ?>" alt="RIE - Rithie Innovative E-Services" class="footer-logo-img" />
                 </a>
                 <p class="footer-description">
-                    RIE - The Digital Technocrats provides cutting-edge digital solutions and professional services to help
+                    RIE - Rithie Innovative E-Services provides cutting-edge digital solutions and professional services to help
                     businesses thrive in the modern digital landscape.
                 </p>
                 <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/share/1DrbXZtHBL/" class="social-link" aria-label="Facebook" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/ravi-k-a6567a38a?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/rithie_rie?igsh=Z2FsMzN6Nm93a2dw" class="social-link" aria-label="Instagram" target="_blank" rel="noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/message/JBCG2OJA4PMVB1" class="social-link" aria-label="WhatsApp" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
 
@@ -64,7 +63,7 @@ $logo_url = get_template_directory_uri() . '/public/logoo.png';
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 RIE - The Digital Technocrats. All Rights Reserved.</p>
+            <p>&copy; 2026 RIE - Rithie Innovative E-Services. All Rights Reserved.</p>
             <div class="footer-bottom-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>

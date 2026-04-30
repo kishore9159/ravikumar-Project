@@ -18,17 +18,17 @@ $contact_info = array(
     array(
         'icon' => 'fas fa-phone',
         'title' => 'Phone Number',
-        'details' => array('+91 9787827527', '+91 9159379192'),
+        'details' => array('+91 8525996985', '+91 9698536038'),
     ),
     array(
         'icon' => 'fas fa-envelope',
         'title' => 'Email Address',
-        'details' => array('kishorekeerthana0742@gmail.com', 'support@rie.com'),
+        'details' => array('ravi.k@rithie.com', 'support@rithie.com'),
     ),
     array(
         'icon' => 'fas fa-clock',
         'title' => 'Working Hours',
-        'details' => array('Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 10:00 AM - 4:00 PM'),
+        'details' => array('Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 9:00 AM - 2:00 PM'),
     ),
 );
 ?>

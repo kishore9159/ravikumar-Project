@@ -22,10 +22,10 @@ const Contact = () => {
     e.preventDefault()
     
     // Format message for WhatsApp
-    const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone}%0A*Subject:* ${formData.subject}%0A*Message:* ${formData.message}`
-    
+    const whatsappMessage = `*New Contact Form Submission*\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Phone:* ${formData.phone}\n*Subject:* ${formData.subject}\n*Message:* ${formData.message}`
+
     // Open WhatsApp with pre-filled message
-    const whatsappUrl = `https://wa.me/919698536038?text=${whatsappMessage}`
+    const whatsappUrl = `https://wa.me/message/JBCG2OJA4PMVB1?text=${encodeURIComponent(whatsappMessage)}`
     window.open(whatsappUrl, '_blank')
     
     alert('Thank you for your message! We will get back to you soon.')
@@ -47,17 +47,17 @@ const Contact = () => {
     {
       icon: <FaPhone />,
       title: 'Phone Number',
-      details: ['+91 9787827527', '+91 9159379192']
+      details: ['+91 8525996985', '+91 9698536038']
     },
     {
       icon: <FaEnvelope />,
       title: 'Email Address',
-      details: ['kishorekeerthana0742@gmail.com', 'support@rie.com']
+      details: ['ravi.k@rithie.com', 'support@rithie.com']
     },
     {
       icon: <FaClock />,
       title: 'Working Hours',
-      details: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 10:00 AM - 4:00 PM']
+      details: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 9:00 AM - 2:00 PM']
     }
   ]
 

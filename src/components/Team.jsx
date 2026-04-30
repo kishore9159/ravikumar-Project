@@ -11,7 +11,7 @@ const Team = () => {
     },
     {
       name: 'Priyanka M.R',
-      role: 'Sr. Production Executive - Operations',
+      role: 'Sr. Production Executive',
       tone: 'tone-2',
       photo: '/Priyanka.png'
     },
@@ -19,7 +19,8 @@ const Team = () => {
       name: 'Aarthi R',
       role: 'Junior Production Executive',
       initials: 'RK',
-      tone: 'tone-3'
+      tone: 'tone-3',
+      photo: '/Aarthi.jpg'
     },
     {
       name: 'Sharmila K',
@@ -31,7 +32,6 @@ const Team = () => {
     {
       name: 'Kishore T',
       role: 'Web Developer',
-     
       tone: 'tone-5',
       photo: '/kishore.jpg'
     }

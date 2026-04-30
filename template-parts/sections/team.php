@@ -11,32 +11,32 @@ if (! defined('ABSPATH')) {
 
 $team_members = array(
     array(
-        'name' => 'RAVI KUMAR',
-        'role' => 'President',
+        'name' => 'Ravi K',
+        'role' => 'CEO & Founder',
         'initials' => 'AD',
         'tone' => 'tone-1',
     ),
     array(
-        'name' => 'Barathi Rajagopalan',
-        'role' => 'Vice President - Client Success',
+        'name' => 'Priyanka M.R',
+        'role' => 'Sr. Production Executive - Operations',
         'initials' => 'BR',
         'tone' => 'tone-2',
     ),
     array(
-        'name' => 'Suresh R',
-        'role' => 'General Manager - Operations',
+        'name' => 'Aarthi R',
+        'role' => 'Junior Production Executive',
         'initials' => 'SR',
         'tone' => 'tone-3',
     ),
     array(
-        'name' => 'Jacob Francis J',
-        'role' => 'Sr. Manager - Finance & Accounts',
+        'name' => 'Sharmila K',
+        'role' => 'Junior Production Executive',
         'initials' => 'JJ',
         'tone' => 'tone-4',
     ),
     array(
-        'name' => 'KISHORE',
-        'role' => 'WEB-DISIGNER',
+        'name' => 'Kishore T',
+        'role' => 'Web Disigner',
         'initials' => 'RD',
         'tone' => 'tone-5',
     ),

@@ -15,15 +15,42 @@ const Footer = () => {
               <img src="/logoo.png" alt="RIE - The Digital Technocrats" className="footer-logo-img" />
             </a>
             <p className="footer-description">
-              RIE - The Digital Technocrats provides cutting-edge digital solutions and professional services to help 
+              RIE - Rithie Innovative E-Services provides cutting-edge digital solutions and professional services to help 
               businesses thrive in the modern digital landscape.
             </p>
             <div className="social-links">
-              <a href="#" className="social-link"><FaFacebookF /></a>
-              <a href="#" className="social-link"><FaTwitter /></a>
-              <a href="#" className="social-link"><FaLinkedinIn /></a>
-              <a href="#" className="social-link"><FaInstagram /></a>
-              <a href="#" className="social-link"><FaWhatsapp /></a>
+              <a
+                href="https://www.facebook.com/share/1DrbXZtHBL/"
+                className="social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ravi-k-a6567a38a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                className="social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://www.instagram.com/rithie_rie?igsh=Z2FsMzN6Nm93a2dw"
+                className="social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://wa.me/message/JBCG2OJA4PMVB1"
+                className="social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
             </div>
           </div>
 
@@ -60,7 +87,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2026 RIE - The Digital Technocrats. All Rights Reserved.</p>
+          <p>&copy; 2026 RIE - Rithie Innovative E-Services. All Rights Reserved.</p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

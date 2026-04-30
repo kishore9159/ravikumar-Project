@@ -127,7 +127,7 @@
       + '*Subject:* ' + subjectValue + '\n'
       + '*Message:* ' + messageValue;
 
-    var whatsappUrl = 'https://wa.me/919698536038?text=' + encodeURIComponent(whatsappMessage);
+    var whatsappUrl = 'https://wa.me/message/JBCG2OJA4PMVB1?text=' + encodeURIComponent(whatsappMessage);
     window.open(whatsappUrl, '_blank');
 
     alert('Thank you for your message! We will get back to you soon.');

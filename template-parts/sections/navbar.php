@@ -22,7 +22,7 @@ $service_links = array(
 <nav class="navbar" id="navbar">
     <div class="container navbar-container">
         <a href="<?php echo esc_url(home_url('/#home')); ?>" class="logo" aria-label="<?php esc_attr_e('Home', 'startup-website'); ?>">
-            <img src="<?php echo esc_url($logo_url); ?>" alt="RIE - The Digital Technocrats" class="logo-img" />
+            <img src="<?php echo esc_url($logo_url); ?>" alt="RIE - Rithie Innovative E-Services" class="logo-img" />
         </a>
 
         <ul class="nav-menu" id="nav-menu">

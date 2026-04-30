@@ -16,7 +16,7 @@ const Hero = () => {
             Innovative <span className="highlight">Digital</span> Solutions for Your Business
           </h1>
           <p className="hero-description">
-            RIE - The Digital Technocrats provides cutting-edge digital solutions, professional services, and expert consulting 
+            RIE - Rithie Innovative E-Services provides cutting-edge digital solutions, professional services, and expert consulting 
             to help your business grow and succeed in the modern digital landscape.
           </p>
           <div className="hero-buttons">
